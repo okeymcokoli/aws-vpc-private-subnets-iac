@@ -60,12 +60,8 @@ terraform init
 ```
 
 4. Customize Variables
-You can modify the values in variables.tfvars to customize your deployment. Here's an example:
+You can modify the values in variables.tfvars to customize your deployment.
 
-vpc_name     = "my-vpc"
-ami_id       = "ami-12345678"  # Specify your own AMI ID
-instance_type = "t2.micro"
-region       = "us-east-1"
 5. Apply Terraform Configuration
 Once everything is set up, you can apply the Terraform configuration to provision the infrastructure:
 ```
