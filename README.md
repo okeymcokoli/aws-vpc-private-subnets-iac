@@ -46,9 +46,6 @@ The project is organized as follows:
 ├── variables.tfvars
 └── vpc.tf
 
-/my-aws-vpc-project │ ├── screenshot.png # Architecture diagram screenshot ├── /assets/ # Folder for storing images/screenshots (optional) │ ├── ec2.tf # EC2 instance configuration ├── iam-instance-profile.tf # IAM Instance Profile for EC2 instances ├── iam-policy.tf # IAM Policies for EC2 instances ├── iam-role.tf # IAM Role attached to EC2 instances ├── loadbalancer.tf # Application Load Balancer setup ├── provider.tf # Terraform provider configuration (AWS) ├── tools-install.sh # Script to install tools on EC2 instances ├── variables.tf # Terraform variables ├── variables.tfvars # Variables values for Terraform ├── vpc.tf # VPC setup └── README.md # Project documentation
-
-
 ### Prerequisites
 
 Before running the Terraform scripts, make sure you have the following:
@@ -149,15 +146,15 @@ terraform destroy -var-file=variables.tfvars
 This will prompt you to confirm, and then it will remove all the resources.
 
 Description of Terraform Files
-ec2.tf: Contains the configuration for launching EC2 instances in private subnets and Bastion Host in the public Subnet.
-iam-instance-profile.tf: Defines the IAM Instance Profile used to allow EC2 instances to assume roles.
-iam-policy.tf: Specifies the IAM policies attached to EC2 instances for accessing AWS resources.
-iam-role.tf: Creates an IAM role with appropriate permissions.
-loadbalancer.tf: Configures an Application Load Balancer and the target groups for EC2 instances.
-provider.tf: Configures the AWS provider to interact with your AWS account.
-tools-install.sh: A shell script that installs necessary tools on EC2 instances during provisioning.
-variables.tf: Declares input variables used in the Terraform configuration.
-variables.tfvars: Contains the values of the variables used during the Terraform plan/apply.
+- **ec2.tf**: Contains the configuration for launching EC2 instances in private subnets and Bastion Host in the public Subnet.
+- **iam-instance-profile.tf**: Defines the IAM Instance Profile used to allow EC2 instances to assume roles.
+- **iam-policy.tf**: Specifies the IAM policies attached to EC2 instances for accessing AWS resources.
+- **iam-role.tf**: Creates an IAM role with appropriate permissions.
+- **loadbalancer.tf**: Configures an Application Load Balancer and the target groups for EC2 instances.
+- **provider.tf**: Configures the AWS provider to interact with your AWS account.
+- **tools-install.sh**: A shell script that installs necessary tools on EC2 instances during provisioning.
+- **variables.tf**: Declares input variables used in the Terraform configuration.
+- **variables.tfvars**: Contains the values of the variables used during the Terraform plan/apply.
 
 
 Contributing
@@ -165,5 +162,3 @@ If you want to contribute to this project, feel free to fork the repository and 
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
->>>>>>> 3a75c92 (add files)
