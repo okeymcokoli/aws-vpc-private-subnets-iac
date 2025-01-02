@@ -6,7 +6,7 @@ sudo apt update -y
 echo "<!DOCTYPE html>
 <html>
 <body>
-<h1>Welcome to Prime Stone Inc</h1>
+<h1>Welcome to my website </h1>
 </body>
 </html>" | sudo tee /var/www/html/index.html
 
