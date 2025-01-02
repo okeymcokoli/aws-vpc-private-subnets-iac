@@ -28,24 +28,6 @@ The infrastructure includes the following components:
 6. **Security Groups**: A security group allowing ingress on ports 22 (SSH), 80 (HTTP), and 8000 for application access.
 
 
-### Project Structure
-
-The project is organized as follows:
-
-.
-├── assets/
-│   └── architecture-diagram.png
-├── ec2.tf
-├── iam-instance-profile.tf
-├── iam-policy.tf
-├── iam-role.tf
-├── loadbalancer.tf
-├── provider.tf
-├── tools-install.sh
-├── variables.tf
-├── variables.tfvars
-└── vpc.tf
-
 ### Prerequisites
 
 Before running the Terraform scripts, make sure you have the following:
