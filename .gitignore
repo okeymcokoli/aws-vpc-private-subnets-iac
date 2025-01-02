@@ -1,0 +1,21 @@
+.terraform/**
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+new_demo.pem
+*.tfplan
+*.tfstate.d
+*.pem                           # Ignore all .pem files
+# Logs and temporary files
+*.log                           # Ignore any log files
+*.bak                           # Ignore backup files
+*.swp                           # Ignore swap files from editors like vim
+
+# IDE/Editor files (Optional, but recommended for personal repos)
+.vscode/                        # Visual Studio Code settings
+.idea/                          # JetBrains IDE settings
+*.sublime-workspace             # Sublime Text workspace files
+
+# Operating system files
+.DS_Store                       # macOS file system junk
+
